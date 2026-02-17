@@ -8,10 +8,21 @@ import { StyledForm } from './StyledForm';
 import { CandidateProfile } from './CandidateProfile';
 import {Product} from './Product';
 import { Greeting } from './Greeting';
+import { UserCard } from './UserCard';
+import { CardWrapper } from './CardWrapper';
 
 function App() {
   return (
    <div>
+
+    <CardWrapper title="User Profile">
+      <p>Bruce Wayne</p>
+      <p>batman@jl.com</p>
+      <button>Edit profile</button>
+    </CardWrapper>
+
+    <UserCard id={1} name="Bruce Wayne" age={30} city="Gotham" email="bruce@wayne.com"/>
+
     <Greeting name="Bruce" message="Good morning"/>
     <Greeting name="Clark"/>
     <Greeting message="Welcome"/>
