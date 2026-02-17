@@ -7,10 +7,16 @@ import { ContactForm } from './ContactForm';
 import { StyledForm } from './StyledForm';
 import { CandidateProfile } from './CandidateProfile';
 import {Product} from './Product';
+import { Greeting } from './Greeting';
 
 function App() {
   return (
    <div>
+    <Greeting name="Bruce" message="Good morning"/>
+    <Greeting name="Clark"/>
+    <Greeting message="Welcome"/>
+    <Greeting/>
+
     <Product 
       title="Gaming Laptop" 
       price={1299.99} 
