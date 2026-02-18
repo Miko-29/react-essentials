@@ -15,8 +15,19 @@ import { UserDetails } from './UserDetails';
 function App() {
   return (
    <div>
-    <UserDetails name="Bruce Wayne" isOnline={true}/>
-    <UserDetails name="Clark Kent" isOnline={false} hideOffline={true}/>
+    <UserDetails 
+      name="Bruce Wayne" 
+      isOnline={true} 
+      isPremium={true} 
+      isNewUser={true}
+      role="admin"
+    />
+    <UserDetails 
+      name="Clark Kent" 
+      isOnline={false} 
+      hideOffline={true}
+      role="vip"
+    />
 
     <CardWrapper title="User Profile">
       <p>Bruce Wayne</p>

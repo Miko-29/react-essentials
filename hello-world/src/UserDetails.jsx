@@ -1,6 +1,15 @@
-export const UserDetails = ({ name, isOnline, hideOffline, isPremium, isNewUser}) => {
+export const UserDetails = ({ name, isOnline, hideOffline, isPremium, isNewUser, role}) => {
     if(hideOffline && !isOnline){
         return null;
+    }
+
+    let roleBadge = null;
+    if( role == "admin") {
+        roleBadge = <span>🔑 Admin</span>
+    } else if (role === "moderator") {
+        roleBadge = <span>👮‍♂️ Moderator</span>;
+    } else if (role === "vip") {
+        roleBadge = <span>💎 VIP</span>
     }
    
     // ternary operators
@@ -9,7 +18,9 @@ export const UserDetails = ({ name, isOnline, hideOffline, isPremium, isNewUser}
         <div>
             <h3>
                 {name}
-                
+                {isPremium && <span> ⭐</span>} 
+                {/* read as ifPremium then render star or else render nothing */}
+                {isNewUser && <span> 🎉</span>}
             </h3>
             <span>{isOnline ? "🟢 Online" : "Offline"}</span>
             <p>{isOnline ? "Available for chat" : "Not available"}</p>
