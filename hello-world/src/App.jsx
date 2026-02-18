@@ -24,7 +24,7 @@ function App() {
     />
     <UserDetails 
       name="Clark Kent" 
-      isOnline={false} 
+      isOnline={true} 
       hideOffline={true}
       role="vip"
     />

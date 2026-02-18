@@ -21,6 +21,7 @@ export const UserDetails = ({ name, isOnline, hideOffline, isPremium, isNewUser,
                 {isPremium && <span> ⭐</span>} 
                 {/* read as ifPremium then render star or else render nothing */}
                 {isNewUser && <span> 🎉</span>}
+                {roleBadge}
             </h3>
             <span>{isOnline ? "🟢 Online" : "Offline"}</span>
             <p>{isOnline ? "Available for chat" : "Not available"}</p>
