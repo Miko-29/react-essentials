@@ -12,10 +12,13 @@ import { UserCard } from './UserCard';
 import { CardWrapper } from './CardWrapper';
 import { UserDetails } from './UserDetails';
 import { ProductList } from './ProductList';
+import { NameList } from './NameList';
 
 function App() {
   return (
    <div>
+    <NameList/>
+      
     <ProductList/>
 
     <UserDetails 
