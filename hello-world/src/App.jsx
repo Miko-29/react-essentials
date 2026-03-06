@@ -15,10 +15,12 @@ import { ProductList } from './ProductList';
 import { NameList } from './NameList';
 import {Alert} from './Alert';
 import { NewButton } from './NewButton';
+import { CustomButton } from './CustomButton';
 
 function App() {
   return (
    <div>
+    <CustomButton />
 
     <Alert>Your changes have been saved!</Alert>
     <Alert type="error">Something went wrong!</Alert>
