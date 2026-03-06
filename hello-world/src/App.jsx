@@ -16,10 +16,15 @@ import { NameList } from './NameList';
 import {Alert} from './Alert';
 import { NewButton } from './NewButton';
 import { CustomButton } from './CustomButton';
+import { Contact } from './Contact';
+import {Newsletter} from './Newsletter';
 
 function App() {
   return (
    <div>
+    <Contact />
+    <Newsletter />
+
     <CustomButton text="Like"/>
     <CustomButton text="Bookmark"/>
 
