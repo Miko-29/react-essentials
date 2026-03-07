@@ -18,10 +18,13 @@ import { NewButton } from './NewButton';
 import { CustomButton } from './CustomButton';
 import { Contact } from './Contact';
 import {Newsletter} from './Newsletter';
+import { Menu } from './Menu';
 
 function App() {
   return (
    <div>
+    <Menu/>
+
     <Contact />
     <Newsletter />
 
