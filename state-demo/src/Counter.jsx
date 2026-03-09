@@ -2,7 +2,10 @@ import { useState } from "react";
 
 export const Counter = () => {
 
-    const [count, setCount] = useState(0); // Array destructing
+    const [count, setCount] = useState(() => {
+        console.log("initial state function called");
+        return 0;
+    }); // Array destructing
     // currentValue, setterFunction = useState(initialValue)
 
     console.log("Counter component rendered with count", count)
