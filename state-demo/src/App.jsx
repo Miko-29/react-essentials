@@ -10,6 +10,7 @@ function App() {
     <>
       <h1>Codevolution React Course</h1>
       <Counter />
+      <Counter />
       <LoginCard/>
     </>
   )
