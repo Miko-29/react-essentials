@@ -5,15 +5,18 @@ import './App.css'
 import { Counter } from './Counter'
 import { LoginCard } from './LoginCard'
 import { UserDashboard } from './UserDashboard'
+import { SimpleCounter } from './SimpleCounter'
 
 function App() {
   return (
     <>
       <h1>Codevolution React Course</h1>
-      <Counter />
+      {/* <Counter />
       <Counter />
       <LoginCard/>
-      <UserDashboard isPremium={true}/>
+      <UserDashboard isPremium={true}/> */}
+
+      <SimpleCounter/>
     </>
   )
 }
