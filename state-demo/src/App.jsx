@@ -8,6 +8,7 @@ import { UserDashboard } from './UserDashboard'
 import { SimpleCounter } from './SimpleCounter'
 import { PrevStateCounter } from './PrevStateCounter'
 import { BatchingCounter } from './BatchingCounter'
+import { UserProfile } from './UserProfile'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
 
       {/* <SimpleCounter/> */}
       {/* <PrevStateCounter /> */}
-      <BatchingCounter />
+      {/* <BatchingCounter /> */}
+      <UserProfile />
     </>
   )
 }
