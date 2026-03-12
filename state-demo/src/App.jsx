@@ -6,6 +6,7 @@ import { Counter } from './Counter'
 import { LoginCard } from './LoginCard'
 import { UserDashboard } from './UserDashboard'
 import { SimpleCounter } from './SimpleCounter'
+import { PrevStateCounter } from './PrevStateCounter'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <LoginCard/>
       <UserDashboard isPremium={true}/> */}
 
-      <SimpleCounter/>
+      {/* <SimpleCounter/> */}
+      <PrevStateCounter />
     </>
   )
 }
