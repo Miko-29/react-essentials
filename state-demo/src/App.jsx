@@ -9,11 +9,13 @@ import { SimpleCounter } from './SimpleCounter'
 import { PrevStateCounter } from './PrevStateCounter'
 import { BatchingCounter } from './BatchingCounter'
 import { UserProfile } from './UserProfile'
+import { TodoList } from './TodoList'
 
 function App() {
   return (
     <>
       <h1>Codevolution React Course</h1>
+      <TodoList/>
       {/* <Counter />
       <Counter />
       <LoginCard/>
@@ -22,7 +24,7 @@ function App() {
       {/* <SimpleCounter/> */}
       {/* <PrevStateCounter /> */}
       {/* <BatchingCounter /> */}
-      <UserProfile />
+      {/* <UserProfile /> */}
     </>
   )
 }
