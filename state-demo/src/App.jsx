@@ -11,6 +11,7 @@ import { BatchingCounter } from './BatchingCounter'
 import { UserProfile } from './UserProfile'
 import { TodoList } from './TodoList'
 import { ShoppingCart } from './ShoppingCart'
+import { CounterWithReducer } from './CounterWithReducer'
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <BatchingCounter /> */}
       {/* <UserProfile /> */}
       {/* <TodoList/> */}
-      <ShoppingCart/>
+      {/* <ShoppingCart/> */}
+      <CounterWithReducer/>
     </>
   )
 }
