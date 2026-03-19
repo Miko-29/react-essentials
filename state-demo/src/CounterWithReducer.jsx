@@ -9,7 +9,7 @@ const countReducer = (state, action) => {
         case "decrement":
             return state - 1
         case "reset":
-            return initialState
+            return initialCount
         default:
             return state;
     }
