@@ -12,6 +12,7 @@ import { UserProfile } from './UserProfile'
 import { TodoList } from './TodoList'
 import { ShoppingCart } from './ShoppingCart'
 import { CounterWithReducer } from './CounterWithReducer'
+import { ShoppingCartWithReducer } from './ShoppingCartWithReducer'
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <UserProfile /> */}
       {/* <TodoList/> */}
       {/* <ShoppingCart/> */}
-      <CounterWithReducer/>
+      {/* <CounterWithReducer/> */}
+      <ShoppingCartWithReducer />
     </>
   )
 }
