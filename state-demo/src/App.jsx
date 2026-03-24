@@ -14,6 +14,7 @@ import { ShoppingCart } from "./ShoppingCart";
 import { CounterWithReducer } from "./CounterWithReducer";
 import { ShoppingCartWithReducer } from "./ShoppingCartWithReducer";
 import { CounterWithInit } from "./CounterWithInit";
+import { CustomCounter } from "./CustomCounter";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       {/* <ShoppingCart/> */}
       {/* <CounterWithReducer/> */}
       {/* <ShoppingCartWithReducer /> */}
-      <CounterWithInit />
+      {/* <CounterWithInit /> */}
+      <CustomCounter />
     </>
   );
 }
