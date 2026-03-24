@@ -1,18 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Counter } from './Counter'
-import { LoginCard } from './LoginCard'
-import { UserDashboard } from './UserDashboard'
-import { SimpleCounter } from './SimpleCounter'
-import { PrevStateCounter } from './PrevStateCounter'
-import { BatchingCounter } from './BatchingCounter'
-import { UserProfile } from './UserProfile'
-import { TodoList } from './TodoList'
-import { ShoppingCart } from './ShoppingCart'
-import { CounterWithReducer } from './CounterWithReducer'
-import { ShoppingCartWithReducer } from './ShoppingCartWithReducer'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { Counter } from "./Counter";
+import { LoginCard } from "./LoginCard";
+import { UserDashboard } from "./UserDashboard";
+import { SimpleCounter } from "./SimpleCounter";
+import { PrevStateCounter } from "./PrevStateCounter";
+import { BatchingCounter } from "./BatchingCounter";
+import { UserProfile } from "./UserProfile";
+import { TodoList } from "./TodoList";
+import { ShoppingCart } from "./ShoppingCart";
+import { CounterWithReducer } from "./CounterWithReducer";
+import { ShoppingCartWithReducer } from "./ShoppingCartWithReducer";
+import { CounterWithInit } from "./CounterWithInit";
 
 function App() {
   return (
@@ -30,9 +31,10 @@ function App() {
       {/* <TodoList/> */}
       {/* <ShoppingCart/> */}
       {/* <CounterWithReducer/> */}
-      <ShoppingCartWithReducer />
+      {/* <ShoppingCartWithReducer /> */}
+      <CounterWithInit />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
