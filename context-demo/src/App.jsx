@@ -1,19 +1,16 @@
 import "./App.css";
 import { Header } from "./header";
+import { UserContextProvider } from "./UserContextProvider";
 
-function App(){
-  const user = {
-    name : "Bruce Wayne",
-    role : "admin",
-    theme : "dark"
-  }
-
+function App() {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <Header user={user} />
-    </div>
-  )
+    <UserContextProvider>
+      <div>
+        <h1>Dashboard</h1>
+        <Header />
+      </div>
+    </UserContextProvider>
+  );
 }
 
 export default App;
